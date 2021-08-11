@@ -7,7 +7,8 @@ import java.util.Scanner;
  * this is main class EmployeePayrollService
  */
 public class EmployeePayrollService {
-    public enum IOService{CONSOLE_IO,FILE_IO,DB_IO,REST_IO}
+    public enum IoService{CONSOLE_IO,FILE_IO,DB_IO,REST_IO}
+
     // Declaration of list employeePayrollList
     private List<EmployeePayrollData> employeePayrollList;
 
