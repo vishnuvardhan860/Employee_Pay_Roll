@@ -3,10 +3,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * this is main class EmployeePayrollService
- */
 public class EmployeePayrollService {
+    public long countEntries(IoService fileIo) {
+        return 0;
+    }
+
+
     public enum IoService{CONSOLE_IO,FILE_IO,DB_IO,REST_IO}
 
     // Declaration of list employeePayrollList
@@ -25,6 +27,9 @@ public class EmployeePayrollService {
         employeePayrollService.writeEmployeePayrollData();
     }
 
+    private void writeEmployeePayrollData() {
+    }
+
     // this is method to read employee data form console by using Scanner class
     private void readEmployeePayrollData(Scanner consoleInputReader) {
         System.out.print("Welcome to Employee PayRollService\n");
@@ -38,7 +43,7 @@ public class EmployeePayrollService {
     }
 
     // this is method to write employee data into console.
-    private void writeEmployeePayrollData() {
+    private void writeEmployeePayrollData(IoService fileIo) {
         System.out.println("\nWriting Employee Payroll Roaster to Console\n" + employeePayrollList);
     }
 }
